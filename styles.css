@@ -1,0 +1,125 @@
+body {
+    background-color: #82CDFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.winner-title {
+    width: 430px;
+    height: 74px;
+    background-color: #0099FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 12px 12px 0 0;
+}
+
+.scoreboard {
+    width: 950px;
+    height: 148px;
+    background-color: #0099FF;
+    border-radius: 17px;
+    display: flex;
+    justify-content: space-evenly;    /* alinha na horizontal */
+    align-items: center;        /* alinha na vertical */
+}
+
+.scoreboard-player-name {
+    color: #FFFFFF;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.score {
+    width: 130px;
+    height: 120px;
+    background-color: #DBF1FF;
+    color: #0099FF;
+    border-radius: 17px;
+    font-size: 104px;
+    font-weight: 900;
+    line-height: 108px;   /* pode centralizar na vertical*/
+    text-align: center;     /* pode centralizar na horizontal */
+}
+
+.small-vs {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 58px;
+    margin: 0 10px;
+}
+
+.battle-field {
+    margin-top: 56px;
+    height: 414px;
+    display: flex;   /* em linha */
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.button {
+    width: 220px;
+    height: 80px;
+    background-color: #0099FF;
+    color:#FFFFFF;
+    border: none;
+    font-size: 44px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;  /* troca o cursor do mouse pro indicador apontando */
+    transition: 300ms; /* duração da transição do hover */
+    box-shadow: 3px 3px 10px #000000;
+}
+
+.button:hover {    /* o que acontecerá quando colocar o mouse em cima do botão*/
+    border: 1px solid #0099FF;
+    background-color: transparent;
+    color: #0099FF;
+    box-shadow: 1px 1px 1px #000000;
+}
+
+.field-box {
+    width: 1313px;
+    height: 414px;
+    background-color: #0099FF;
+    margin: 0 19px;
+    border-radius: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    box-sizing: border-box; /* garante que o elemento não muda de tamanho com a adição do padding */
+}
+
+.field {
+    background-color: #DBF1FF;
+    width: 464px;
+    height: 345px;
+    border-radius: 17px;
+}
+
+.big-vs {
+    font-size: 104px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.config {
+    margin-top: 22px;
+}
+
+.reset-button {
+    margin-left: 101px;
+}
